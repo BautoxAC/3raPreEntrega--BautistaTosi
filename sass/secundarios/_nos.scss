@@ -1,0 +1,25 @@
+// imports
+@import"../utillities/variables";
+@import"../utillities/extend";
+@import"../utillities/mixin";
+@import"../utillities/listas";
+/*estilos de nos*/
+.contenedornos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .contenedornos__p2{
+        padding: $medida-1;
+        text-align: center;
+    }
+    .contenedornos__img{
+        padding: $medida-1;
+    }
+    .contenedornos__div__h1{
+        font-size: $medida-2;
+        padding: $medida-1;
+    }
+    .contenedornos__div__p1{
+        display: none;
+    }
+}

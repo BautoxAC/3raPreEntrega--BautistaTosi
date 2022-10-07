@@ -1,0 +1,28 @@
+//imports
+@import"../utillities/variables";
+@import"../utillities/extend";
+@import"../utillities/mixin";
+@import"../utillities/listas";
+/* estilos del nav */
+.body header nav {
+    background-color: nth($colores,1);
+    text-align: center;
+
+    ul li {
+        font-weight: bold;
+        padding: $medida-1;
+        transition: 1s;
+        &:hover {
+            text-decoration: underline;
+            transform: scale(1.2);
+        }
+        #a{
+            color: nth($colores, 3);
+        }
+    }
+    div{
+        a img{
+            @include sizes(8rem, 4rem);
+        }
+    }
+}

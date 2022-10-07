@@ -1,0 +1,136 @@
+//imports
+@import"../utillities/variables";
+@import"../utillities/extend";
+@import"../utillities/mixin";
+@import"../utillities/listas";
+/* estilos de la mediaquerie */
+@media screen and (min-width:600px) {
+
+    /* estilos de sed de mediquerie*/
+    .carrusel {
+        display: none;
+    }
+
+    .contenedorsed {
+        @extend %grid;
+        border: $medida-3 solid black;
+        grid-template-areas:
+            "hijo1 hijo2"
+            "hijo4 hijo3"
+            "hijo5 hijo6";
+        div img {
+         @include sizes(60%,13rem)
+        }
+    }
+
+    .contenedorsed__hijo1 {
+        grid-area: hijo1;
+        padding: $medida-2;
+        align-self: center;
+    }
+    .contenedorsed__hijo2 {
+        grid-area: hijo2;
+        padding: $medida-2;
+        h2 {
+            font-size: xx-large;
+            margin: $medida-3;
+        }
+    }
+
+    .contenedorsed__hijo3 {
+        grid-area: hijo3;
+        padding: $medida-2;
+    }
+
+    .contenedorsed__hijo4 {
+        grid-area: hijo4;
+        padding: $medida-2;
+        h2 {
+            font-size: xx-large;
+            margin: $medida-3;
+        }
+    }
+
+    .contenedorsed__hijo5 {
+        grid-area: hijo5;
+        padding: $medida-2;
+    }
+
+    .contenedorsed__hijo6 {
+        grid-area: hijo6;
+        padding: $medida-2;
+        h2 {
+            font-size: xx-large;
+            margin: $medida-3;
+        }
+    }
+    /* estilos de Productos de mediaquerie*/
+
+    .contenedorpro {
+        justify-content: center;
+        flex-flow: row nowrap;
+    }
+
+    .contenedorpro__hijo {
+        width: 33.3%;
+    }
+
+    /* estilos del h1 */
+    body main h1 {
+        font-size: $medida-2 + 1rem;
+    }
+    /*estilos del nav*/
+    #a{
+        font-size: $medida-1;
+    }
+
+    /*estilos de index*/
+
+    .contenedorindex{
+    @extend %grid;
+    grid-template-areas: 
+    "logo video"
+    "h2 video"
+    "p video";
+    .contenedorindex__logo{
+        grid-area: logo;
+        display: inline;
+        padding: 0rem $medida-1;
+        img{
+            @include sizes(45%,90%);
+        }
+    }
+    .contenedorindex__video{
+        grid-area: video;
+        @include sizes(100%,100%);
+    }   
+    .contenedorindex__h2{
+        grid-area: h2;
+        padding: $medida-1;
+    }
+    .contenedorindex__p{
+        grid-area: p;
+        padding: $medida-1;
+        display: inline;
+    }
+    }
+    /*estilos de nos*/
+    .contenedornos{
+        flex-direction: row-reverse;
+        margin: $medida-2;
+        .contenedornos__div{
+            padding: $medida-1;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-bottom: $medida-2;
+        }
+        .contenedornos__div__h1{
+            padding-top: $medida-2*1.7;
+        }
+        .contenedornos__div__p1{
+            display: inline;
+        }
+    }
+}

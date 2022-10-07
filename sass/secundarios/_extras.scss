@@ -1,0 +1,9 @@
+// variables y mixin
+@import"../utillities/variables";
+@import"../utillities/mixin";
+/* estilos del h1 */
+.body main h1 {
+    font-size: $medida-2;
+    text-align: center;
+    margin: $medida-2;
+}

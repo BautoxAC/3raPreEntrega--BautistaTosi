@@ -1,0 +1,10 @@
+// imports
+@import"../utillities/variables";
+@import"../utillities/extend";
+@import"../utillities/mixin";
+@import"../utillities/listas";
+/*reset*/
+* {
+    @include margen(0rem,0rem);
+    box-sizing: border-box;
+}

@@ -1,0 +1,27 @@
+// imports
+@import"../utillities/variables";
+@import"../utillities/mixin";
+/*estilos del index*/
+.contenedorindex__logo{
+    display: none;
+}
+.contenedorindex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .contenedorindex__video{
+        @include sizes(100%,20rem);
+        padding: $medida-1;
+    }
+    .contenedorindex__p{
+        display: none;
+    }
+    .contenedorindex__h2{
+        font-size: $medida-2;
+        margin-top: $medida-2;
+    }
+    p{
+        text-align: center;
+        padding: $medida-1;
+    }
+}

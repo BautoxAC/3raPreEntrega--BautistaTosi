@@ -1,0 +1,17 @@
+//imports
+@import"../utillities/variables";
+@import"../utillities/mixin";
+/* estilos de sedes */
+.contenedorsed {
+    display: none;
+}
+section div div {
+    display: inline;
+    text-align: center;
+    img{
+        @include sizes(60%,13rem)
+    }
+}
+#p{
+    margin: $medida-3;
+}

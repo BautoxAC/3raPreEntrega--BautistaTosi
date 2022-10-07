@@ -1,0 +1,42 @@
+// imports
+@import"../utillities/variables";
+@import"../utillities/extend";
+@import"../utillities/mixin";
+@import"../utillities/listas";
+/* estilo de productos */
+.contenedorpro {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.contenedorpro__hijo {
+    @include margen(0rem $medida-1, $medida-1 0rem);
+    width: auto;
+    text-align: center;
+    border: 0.3rem solid black;
+    overflow: auto;
+    transition: 1s;
+    margin-top: $medida-2;
+    h2 {
+        padding: $medida-1;
+    }
+    p {
+        font-weight: bold;
+        font-size: $medida-1 + $medida-3;
+        padding-bottom: $medida-1;
+    }
+    &:hover {
+        transform: scale(1.08);
+    }
+    img {
+        @include sizes(66.6%, 12.5rem)
+    }
+    span {
+        padding: $medida-3;
+    }
+}
+
+
+
+
+

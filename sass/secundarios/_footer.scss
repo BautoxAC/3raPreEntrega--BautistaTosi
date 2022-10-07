@@ -1,0 +1,28 @@
+// imports
+@import "../utillities/listas";
+@import"../utillities/variables";
+/* estilo del footer */
+.footer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: nth($colores, 2);
+    padding: $medida-1;
+    margin-top: $medida-1;
+    color: white;
+    gap: 0.6rem;
+    .footer__subt {
+        font-size: $medida-1 + $medida-3;
+        font-weight: bold;
+    }
+    div {
+        margin-bottom: $medida-1;
+        a{
+            margin: $medida-3;
+        }
+    }
+    
+}
+
+

@@ -1,0 +1,39 @@
+// variables y mixin
+@import"../utillities/variables";
+@import"../utillities/mixin";
+/*estilo de contact*/
+
+.contacto__formulario {
+    display: flex;
+    justify-content: center;
+    @include margen(5rem $medida-1, 0rem);
+    .contacto__formulario__caja {
+        background-color: white;
+        border: 4px solid black;
+        background-color: nth($colores,4);
+        .contacto__formulario__titulo {
+            border: 1px solid black;
+            font-weight: bold;
+            background-color: nth($colores,4);
+            font-size: $medida-1 + $medida-3;
+            @include margen(0rem, $medida-2);
+            text-align: center;
+
+        }    
+        section {
+            @include margen($medida-2, $medida-1);
+            gap: $medida-1;
+            font-size: larger;
+        }
+        .contacto__formulario__botones {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    
+}
+
+
+
+
+
